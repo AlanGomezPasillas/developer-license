@@ -20,20 +20,66 @@
     <meta property="og:title" content="Alan Gómez Pasillas - Developer License">
     <meta property="og:description" content="Interactive developer credential: skills, experience, and links.">
     <meta property="og:type" content="profile">
+
+    <style>
+      .flex {
+        display: flex;
+        gap: 10px;
+      }
+  
+      .col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #personal-info {
+        width: min-content;
+      }
+
+      .field {
+        width: 100%;
+        display: flex;
+        border: solid 1px black;
+      }
+
+      .field > span {
+        font-weight: bold;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+
+      data {
+        text-align: center;
+        background-color: grey;
+        color: white;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <h1>Software Development Engineer</h1>
-    <fieldset><legend>Personal Info</legend>
-      <img width="256px" height="256px" src="img/profile-picture.webp">
-      <label>Full Name:
-        <input value="Alan Gómez Pasillas" readonly>
-      </label>
-      <label>Age:
-        <input value="25" readonly>
-      </label>
-      <label>Country:
-        <input value="Mexico" readonly>
-      </label>
-    </fieldset>
+    <section id="personal-info" class="flex col">
+      <h2>Personal Info</h2>
+      <img width="256" height="256" src="img/profile-picture.webp" alt="Alan's profile picture">
+      <div class="field">
+        <span>Name:</span>
+        <data id="name">Alan Gómez Pasillas</data>
+      </div>
+      <div class="flex row">
+        <div class="field">
+          <span>Country:</span>
+          <data id="country">Mexico</data>
+        </div>
+        <div class="field">
+          <span>Age:</span>
+          <data id="age">25</data>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
