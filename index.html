@@ -57,8 +57,24 @@
         font-weight: bold;
       }
 
-      data, a {
+      .field svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      a {
         text-decoration: none;
+        min-width: 128px;
+      }
+      
+      body {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      data, a{
         justify-content: center;
         background-color: black;
         text-align: center;
@@ -72,104 +88,186 @@
         white-space: nowrap;
         padding: 2px;
       }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1, h2 {
+        text-align: center;
+        margin: 5px;
+      }
+      
+      main {
+        padding: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 80px -20px, rgba(0, 0, 0, 0.3) 0px 15px 30px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset
+      }
+
+      #profile-picture {
+        margin: 1px;
+      }
     </style>
   </head>
-  <body>
-
+  <body class="flex">
 <svg style="display: none;">
   <symbol id="linkedin" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#007EBB"/><path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"/></g></symbol>
   <symbol id="youtube" viewBox="0 0 313.23315 216.02286" version="1.1" id="svg5" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs2" /><g id="layer1" transform="translate(-54.079375,-5.2758072)"><path d="m 210.53177,221.29866 c 0,0 98.12514,0 122.46443,-6.48069 13.70449,-3.6724 24.01093,-14.2575 27.62825,-27.32688 6.68807,-23.97854 6.68807,-74.41988 6.68807,-74.41988 0,0 0,-50.117297 -6.68807,-73.879819 C 357.00713,25.79798 346.70069,15.42887 332.9962,11.864515 308.65691,5.2758072 210.53177,5.2758072 210.53177,5.2758072 c 0,0 -97.9062,0 -122.135976,6.5887078 -13.485335,3.564355 -24.010529,13.933465 -27.847831,27.326876 -6.468588,23.762522 -6.468588,73.879819 -6.468588,73.879819 0,0 0,50.44134 6.468588,74.41988 3.837302,13.06938 14.362496,23.65448 27.847831,27.32688 24.229776,6.48069 122.135976,6.48069 122.135976,6.48069 z" fill="#ff0033" id="path1412" style="stroke-width:0.0208149" clip-path="none" /><path d="M 259.30109,113.28723 178.29251,67.382379 v 91.809711 z" fill="#ffffff" id="path1414" style="stroke-width:0.0208149" clip-path="none" /></g></symbol>
   <symbol id="google-play" viewBox="0 0 28.99 31.99" xmlns="http://www.w3.org/2000/svg"><g data-name="Capa 2"><g data-name="Capa 1"><path d="M13.54 15.28.12 29.34a3.66 3.66 0 0 0 5.33 2.16l15.1-8.6Z" style="fill:#ea4335"/><path d="m27.11 12.89-6.53-3.74-7.35 6.45 7.38 7.28 6.48-3.7a3.54 3.54 0 0 0 1.5-4.79 3.62 3.62 0 0 0-1.5-1.5z" style="fill:#fbbc04"/><path d="M.12 2.66a3.57 3.57 0 0 0-.12.92v24.84a3.57 3.57 0 0 0 .12.92L14 15.64Z" style="fill:#4285f4"/><path d="m13.64 16 6.94-6.85L5.5.51A3.73 3.73 0 0 0 3.63 0 3.64 3.64 0 0 0 .12 2.65Z" style="fill:#34a853"/></g></g></symbol>
   <symbol id="facebook" viewBox="0 0 666.66668 666.66717" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs13"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath25"><path d="M 0,700 H 700 V 0 H 0 Z" id="path23" /></clipPath></defs><g id="g17" transform="matrix(1.3333333,0,0,-1.3333333,-133.33333,799.99999)"> <g id="g19"> <g id="g21" clip-path="url(#clipPath25)"> <g id="g27" transform="translate(600,350)"> <path d="m 0,0 c 0,138.071 -111.929,250 -250,250 -138.071,0 -250,-111.929 -250,-250 0,-117.245 80.715,-215.622 189.606,-242.638 v 166.242 h -51.552 V 0 h 51.552 v 32.919 c 0,85.092 38.508,124.532 122.048,124.532 15.838,0 43.167,-3.105 54.347,-6.211 V 81.986 c -5.901,0.621 -16.149,0.932 -28.882,0.932 -40.993,0 -56.832,-15.528 -56.832,-55.9 V 0 h 81.659 l -14.028,-76.396 h -67.631 V -248.169 C -95.927,-233.218 0,-127.818 0,0" style="fill:#0866ff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path29"/></g><g id="g31" transform="translate(447.9175,273.6036)"><path d="M 0,0 14.029,76.396 H -67.63 v 27.019 c 0,40.372 15.838,55.899 56.831,55.899 12.733,0 22.981,-0.31 28.882,-0.931 v 69.253 c -11.18,3.106 -38.509,6.212 -54.347,6.212 -83.539,0 -122.048,-39.441 -122.048,-124.533 V 76.396 h -51.552 V 0 h 51.552 v -166.242 c 19.343,-4.798 39.568,-7.362 60.394,-7.362 10.254,0 20.358,0.632 30.288,1.831 L -67.63,0 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path33"/></g></g></g></g></symbol>
+  <symbol id="hackerrank" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="#00ea64" d="M0 0v24h24V0zm9.95 8.002h1.805c.061 0 .111.05.111.111v7.767c0 .061-.05.111-.11.111H9.95a.11.11 0 0 1-.111-.11v-2.87H7.894v2.87c0 .06-.05.11-.11.11H5.976a.11.11 0 0 1-.11-.11V8.112c0-.06.05-.11.11-.11h1.806c.061 0 .11.05.11.11v2.869H9.84v-2.87c0-.06.05-.11.11-.11zm2.999 0h5.778c.061 0 .111.05.111.11v7.767a.11.11 0 0 1-.11.112h-5.78a.11.11 0 0 1-.11-.11v-7.77c0-.06.05-.11.11-.11z"/></symbol>
+  <symbol id="codeforces" viewBox="0 0 24 24"><path fill="#AE0F0A" d="M22.5 10.5c.8 0 1.5.7 1.5 1.5v7.5c0 .8-.7 1.5-1.5 1.5h-3c-.8 0-1.5-.7-1.5-1.5V12c0-.8.7-1.5 1.5-1.5h3z"/><path fill="#4F81C1" d="M13.5 3c.8 0 1.5.7 1.5 1.5v15c0 .8-.7 1.5-1.5 1.5h-3c-.8 0-1.5-.7-1.5-1.5v-15c0-.8.7-1.5 1.5-1.5h3z"/><path fill="#FFD400" d="M4.5 7.5c.8 0 1.5.7 1.5 1.5V19.5c0 .8-.7 1.5-1.5 1.5h-3c-.8 0-1.5-.7-1.5-1.5V9c0-.8.7-1.5 1.5-1.5h3z"/></symbol>
+  <symbol id="leetcode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M0 0h128v128H0z" fill="none"/><path fill="#b3b1b0" d="M117.555 76.558c0-3.957-3.008-7.178-6.72-7.178H57.159c-3.712 0-6.72 3.221-6.72 7.178c0 3.958 3.002 7.18 6.72 7.18h53.676c3.712.005 6.72-3.217 6.72-7.18"/><path fill="#e7a41f" d="m18.79 96.996l23.003 23.26c5.19 5.221 12.363 7.744 20.283 7.744s15.094-2.73 20.294-7.968l13.803-14.065c2.72-2.741 2.624-7.28-.208-10.133c-2.832-2.854-7.333-2.95-10.048-.208L71.645 109.53c-2.465 2.49-5.878 3.53-9.649 3.53s-7.179-1.04-9.653-3.53L29.419 86.26c-2.47-2.49-3.712-6.133-3.712-9.936s1.243-7.238 3.712-9.728l22.854-23.361c2.47-2.49 5.952-3.44 9.718-3.44s7.179 1.04 9.648 3.53l14.273 13.9c2.72 2.746 7.221 2.65 10.053-.203c2.832-2.859 2.928-7.398.208-10.14L82.37 32.825a26.64 26.64 0 0 0-12.758-7.094l-.18-.037l13.05-13.35c2.73-2.741 2.635-7.285-.197-10.139S74.945-.74 72.22 2.002L18.79 55.87c-5.19 5.237-7.905 12.464-7.905 20.454S13.6 91.77 18.79 96.996"/><path fill="#070706" d="M43.5 121.674a11.3 11.3 0 0 1-2.528-1.925c-7.078-7.11-14.187-14.187-21.249-21.318C9.115 87.721 7.445 72.1 15.531 59.39a32 32 0 0 1 4.475-5.355L71.33 2.605c3.333-3.34 7.99-3.478 11.088-.358c2.987 3.003 2.81 7.76-.416 11.019c-4.101 4.139-8.208 8.267-12.315 12.4c-.219.651-.747 1.067-1.2 1.531c-4.603 4.672-9.334 9.222-13.872 13.963c-.592.619-1.398.992-1.984 1.627c-7.59 7.59-15.27 15.094-22.753 22.784c-6.054 6.225-5.85 15.67.363 22.012c6.976 7.125 14.075 14.134 21.126 21.195c.357.357.725.704 1.088 1.056c2.496 1.616 2.528 6.667.976 8.912c-1.712 2.48-3.947 4-7.11 3.883c-1.061-.032-1.936-.458-2.821-.955"/></symbol>
+  <symbol id="indiexpo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M115.5 96.69C111.32 95.89 108.35 90.48 105.82 87.35C104.82 86.13 103.02 84.62 103.69 82.85C105.01 79.35 115.76 68.2 118.82 64.66C129.49 52.34 139.19 39.04 150.26 27.1C155.25 21.72 160.77 10.65 169.63 16.2C179.91 22.63 168.95 33.22 163.97 38.84C147.3 57.64 131.73 77.47 115.5 96.69ZM43.33 17.08C46.74 18.77 49.56 23.94 52.02 26.82C58.79 34.73 65.24 42.9 72.07 50.76C85.15 65.8 98.09 81.15 110.87 96.3C123.31 111.04 134.89 126.65 147.89 140.94C153.29 146.87 157.99 153.5 163.31 159.52C166.54 163.18 170.45 167 172.95 171.19C174.96 174.58 173.7 179.19 170.94 181.77C168.1 184.43 162.93 185.36 159.74 182.77C156.22 179.92 153.83 175.69 150.8 172.37C145.63 166.71 140.6 160.7 135.81 154.71C126.77 143.42 117.42 132.16 107.84 121.33C105.05 118.19 101.63 114.99 99.2 111.64C91.27 100.68 81.82 90.33 72.97 79.86C66.31 71.97 59.72 64.01 53.08 56.09C50.45 52.96 47.51 47.92 44.11 45.72C43.85 36.17 43.59 26.63 43.33 17.08ZM44 181.25C44.04 171.93 44.07 162.6 44.11 153.28C58.57 136.2 73.04 119.12 87.5 102.04C91.92 104.03 96.16 111.94 99.81 115.5C81.21 137.42 62.6 159.33 44 181.25Z" fill="#e86600" fill-rule="evenodd" stroke="#e86600" stroke-width="0.25" stroke-linejoin="round"/><path d="M43.33 17.08C43.59 26.63 43.85 36.17 44.11 45.72C44.11 81.57 44.11 117.43 44.11 153.28C44.07 162.6 44.04 171.93 44 181.25C43.3 182.22 43.3 183.37 42.43 184.26C36.74 190.05 28.15 187.29 25.7 180.16C24.69 177.21 25.64 172.29 25.64 169.17C25.64 159.96 26.03 150.75 26.03 141.5C26.03 110.67 25.02 79.64 25.96 48.83C26.17 41.9 25.65 35.1 25.64 28.17C25.64 25.79 24.93 22.08 25.7 19.84C27.02 16.01 29.91 13.01 34.17 12.55C36.98 12.25 39.18 13.89 41.5 14.32C42.11 15.24 42.72 16.16 43.33 17.08Z" fill="#cdcdcd" fill-rule="evenodd" stroke="#cdcdcd" stroke-width="0.25" stroke-linejoin="round"/></symbol>
+  <symbol id="keymash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640.45 636.77"><defs><style>.cls-1{fill:#fb923c;}.cls-2{fill:#191d29;}.cls-3{fill:#191d27;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Ebene_4" data-name="Ebene 4"><path class="cls-1" d="M342.75 6l223 128.76a45 45 0 0 1 21.61 30.08L639.56 424a45 45 0 0 1-21.56 47.85L342.76 630.74a45 45 0 0 1-45 0L22.5 471.83A45 45 0 0 1 .89 424L53.08 164.89a45 45 0 0 1 21.61-30.08L297.75 6a45 45 0 0 1 45 0z"/><path class="cls-2" d="M491.4 223.66L332.73 315.27a25 25 0 0 1-25 0L149.06 223.66a25 25 0 0 1 0-43.3l158.67-91.6a25 25 0 0 1 25 0l158.67 91.6a25 25 0 0 1 0 43.3z"/><path class="cls-1" d="M434.54 195.62a7 7 0 0 0-2.7-.81l-101-11.13a1.23 1.23 0 0 1-.54-.17.56.56 0 0 1-.31-.39l-5-45.92a2.65 2.65 0 0 0-1.49-1.92 8 8 0 0 0-7.34 0l-24.72 14.37a2.48 2.48 0 0 0-1.5 2.31L293.53 182l3.47 19.87a.49.49 0 0 1-.29.49l-.58.33a1.58 1.58 0 0 1-1.45 0L250.91 177.4a8.08 8.08 0 0 0-7.31 0l-23.5 13.65c-2 1.17-2 3.07 0 4.24L328 257.56a8.05 8.05 0 0 0 7.31 0l23.5-13.65c2-1.17 2-3.07 0-4.24L329 222.51a.52.52 0 0 1-.3-.39l-1.53-14.68c0-.39.57-.7 1.23-.62L404 215.7a7.8 7.8 0 0 0 4.68-.82l25.84-15c2.15-1.25 1.88-3.15 0-4.25z"/><path class="cls-3" d="M302.54 364.93V501.71A25 25 0 0 1 265 523.36L96.8 426.22a25 25 0 0 1-12-26.58l24.67-122.53a25 25 0 0 1 37-16.72L290 343.28a25 25 0 0 1 12.54 21.65z"/><path class="cls-3" d="M337.92 365V501.73a25 25 0 0 0 37.5 21.65l168.24-97.13a25 25 0 0 0 12-26.59L531 277.13a25 25 0 0 0-37-16.71L350.42 343.31A25 25 0 0 0 337.92 365z"/></g></g></symbol>
+  <symbol id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M0 0h16v16H0z" fill="none"/><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></symbol>
+  <symbol id="codingame" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 2083 2083"><path d="M0 0h2083v2083H0z" fill="#fcd207"/><g fill="#1f2528"><path d="M0 1636c411.554-97.771 692.897-283.177 724-637 10.714-131.212 67.364-243.777 216-319 207.675-80.617 305.728-52.164 390-10 92.668 81.722 119.468 199.94 50 371.5-31.914 100.266-291.001 223.867-410 258.5-392.539 175.893-595.504 430.282-561 783H0z"/><ellipse cx="1666.5" cy="408" rx="196.5" ry="192"/></g></symbol>
+  <symbol id="hackthebox" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 231.81826"><defs><style>.cls-1{fill:#9fef00;}</style></defs><path class="cls-1" d="M204.49571,87.2381l.00133-.041a4.60623,4.60623,0,0,0-1.61649-3.50286c-.049-.04273-.09972-.0836-.15072-.12419l-.04546-.0357a4.29325,4.29325,0,0,0-.55662-.36561L152.37229,54.44186q-.18057-.10712-.36846-.19855a4.61856,4.61856,0,0,0-4.41334.221L97.80713,83.20567a4.6088,4.6088,0,0,0-2.30428,3.9914c0,.03334.00258.06631.00329.09958-.00074.03681-.00614.07318-.00614.11l0,57.39679a4.60793,4.60793,0,0,0,2.43139,4.06281l49.76425,28.73122q.138.07971.28.14887l.01966.00887a4.59414,4.59414,0,0,0,.43214.181c.0204.00739.04047.01567.061.02277a4.56726,4.56726,0,0,0,.43882.12729c.028.00672.05585.0133.08394.01944.14751.03245.296.05825.44541.076.02384.00281.04764.00451.07152.007a4.209,4.209,0,0,0,.94366,0c.02381-.00244.04761-.00414.07141-.007.14943-.01774.29794-.04361.44548-.076.02805-.00614.05585-.01272.08383-.01937.1478-.03541.29439-.0771.4389-.12729.02048-.00717.04051-.01545.06091-.02284a4.61224,4.61224,0,0,0,.43184-.18081l.02-.00909q.14187-.06942.28-.1488l49.76421-28.73122a4.60787,4.60787,0,0,0,2.43139-4.06281L204.5,87.37123C204.5,87.32673,204.4969,87.28253,204.49571,87.2381Zm-89.46935-1.91823,33.89-19.56657a2.16807,2.16807,0,0,1,2.16823,0l33.88946,19.56605a2.16825,2.16825,0,0,1,0,3.75552l-33.89,19.5665a2.16836,2.16836,0,0,1-2.16827.00007L115.02636,89.07532A2.16819,2.16819,0,0,1,115.02636,85.31987Zm29.10289,74.37164a2.16323,2.16323,0,0,1-3.24485,1.87343l-33.82355-19.5282a2.16337,2.16337,0,0,1-1.0816-1.87344V101.11044a2.16322,2.16322,0,0,1,3.24484-1.87337l33.82355,19.52821a2.16331,2.16331,0,0,1,1.08161,1.87344Zm49.89143-19.52821a2.16339,2.16339,0,0,1-1.0816,1.87344l-33.82355,19.5282a2.16323,2.16323,0,0,1-3.24485-1.87343V120.63872a2.16331,2.16331,0,0,1,1.0816-1.87344L190.7758,99.23707a2.16325,2.16325,0,0,1,3.24488,1.87344Z"/></symbol>
 </svg>
-
-    <h1>Software Development Engineer</h1>
-    <main class="flex rowcol">
-      <section id="personal-info" class="flex col">
-        <h2>Personal Info</h2>
-        <data>
-          <img width="256" height="256" src="img/profile-picture.webp" alt="Alan's profile picture">
-        </data>
-        <div class="field">
-          <span>Name:</span>
-          <data id="name">Alan Gómez Pasillas</data>
-        </div>
-        <div class="flex row">
+    <main id="card">
+      <h1>Software Development Engineer</h1>
+      <div class="flex rowcol">
+        <section id="personal-info" class="flex col">
+          <h2>Personal Info</h2>
+          <data>
+            <img id="profile-picture" fetchpriority="high" width="256" height="256" src="img/profile-picture.webp" alt="Alan's profile picture">
+          </data>
           <div class="field">
-            <span>🌎 Country:</span>
-            <data id="country">
-              <span>🇲🇽 Mexico</span>
+            <span>Name:</span>
+            <data id="name">Alan Gómez Pasillas</data>
+          </div>
+          <div class="flex row">
+            <div class="field">
+              <span>🌎 Country:</span>
+              <data id="country">
+                <span>🇲🇽 Mexico</span>
+              </data>
+            </div>
+            <div class="field">
+              <span>Age:</span>
+              <data id="age">25</data>
+            </div>
+          </div>
+          <div class="field">
+            <span>Email:</span>
+            <data id="email">
+              <a target="_blank" href="mailto:alangomezpasillas@gmail.com">alangomezpasillas@gmail.com</a>
             </data>
           </div>
-          <div class="field">
-            <span>Age:</span>
-            <data id="age">25</data>
-          </div>
-        </div>
-        <div class="field">
-          <span>Email:</span>
-          <data id="email">
-            <a target="_black" href="mailto:alangomezpasillas@gmail.com">alangomezpasillas@gmail.com</a>
-          </data>
-        </div>
-      </section>
-      <section id="online-presence" class="flex col">
-        <h2>Online Presence</h2>
-        <nav class="flex row">
-          <div class="flex col">
-            <ul>
-              <li class="field">
-                <a class="flex" target="_blank" href="https://mysticprisma.github.io">
-                  <div>🌐</div>
-                  <span class="flex">Website</span>
-                </a>
-              </li>
-              <li class="field">
-                <a class="flex" target="_blank" href="https://www.linkedin.com/in/alan-gomez-pasillas">
-                  <svg width="1em" height="1em"><use href="#linkedin"/></svg>
-                  <span class="flex">LinkedIn</span>
-                </a>
-              </li>
-              <li class="field">
-                <a class="flex" target="_blank" href="https://www.youtube.com/@AmigoProgramadorOficial">
-                  <svg width="1em" height="1em" color="red"><use href="#youtube"/></svg>
-                  <span class="flex">YouTube</span>
-                </a>
-              </li>
-              <li class="field">
-                <a class="flex" target="_blank" href="https://play.google.com/store/apps/developer?id=Mystic+Prisma+Games">
-                  <svg width="1em" height="1em"><use href="#google-play"/></svg>
-                  <span class="flex">Google Play</span>
-                </a>
-              </li>
-              <li class="field">
-                <a class="flex" target="_blank" href="https://www.facebook.com/MysticPrismaGames">
-                  <svg width="1em" height="1em"><use href="#facebook"/></svg>
-                  <span class="flex">Facebook</span>
-                </a>
-              </li>
+        </section>
+        <div class="flex col">
+          <section id="online-presence" class="flex col">
+            <h2>Online Presence</h2>
+            <nav class="flex row">
+              <div>
+                <ul class="flex col">
+                  <li class="field">
+                    <a target="_blank" href="https://mysticprisma.github.io">
+                      <div>🌐</div>
+                      <span class="flex">Website</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.linkedin.com/in/alan-gomez-pasillas">
+                      <svg><use href="#linkedin"/></svg>
+                      <span class="flex">LinkedIn</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.youtube.com/@AmigoProgramadorOficial">
+                      <svg color="red"><use href="#youtube"/></svg>
+                      <span class="flex">YouTube</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.facebook.com/MysticPrismaGames">
+                      <svg><use href="#facebook"/></svg>
+                      <span class="flex">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://play.google.com/store/apps/developer?id=Mystic+Prisma+Games">
+                      <svg><use href="#google-play"/></svg>
+                      <span class="flex">GooglePlay</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.hackerrank.com/profile/alanskatemuyel">
+                      <svg><use href="#hackerrank"/></svg>
+                      <span class="flex">HackerRank</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://codeforces.com/profile/alangomezpasillas">
+                      <svg><use href="#codeforces"/></svg>
+                      <span class="flex">Codeforces</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex col">
+                  <li class="field">
+                    <a target="_blank" href="https://www.codingame.com/profile/454c68738d413611ffbb785aeee055786244457">
+                      <svg><use href="#codingame"/></svg>
+                      <span class="flex">CodinGame</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://leetcode.com/u/alangomezpasillas">
+                      <svg><use href="#leetcode"/></svg>
+                      <span class="flex">LeetCode</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.indiexpo.net/en/users/MysticPrisma">
+                      <svg><use href="#indiexpo"/></svg>
+                      <span class="flex">IndiExpo</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.keymash.io/profile/Alan-1023">
+                      <svg><use href="#keymash"/></svg>
+                      <span class="flex">Keymash</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.github.com/alangomezpasillas">
+                      <svg><use href="#github"/></svg>
+                      <span class="flex">GitHub1</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://www.github.com/mysticprisma">
+                      <svg color="#0FBF3E"><use href="#github"/></svg>
+                      <span class="flex">GitHub2</span>
+                    </a>
+                  </li>
+                  <li class="field">
+                    <a target="_blank" href="https://app.hackthebox.com/public/users/1808630">
+                      <svg><use href="#hackthebox"/></svg>
+                      <span class="flex">HackTheBox</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+          <section id="languages" class="flex col">
+            <h2>Languages</h2>
+            <div class="flex row">
+              <div class="field">
+                <span>English:</span>
+                <data>C2</data>
+              </div>
+              <div class="field">
+                <span>Spanish:</span>
+                <data>Native</data>
+              </div>
             </div>
-            <li class="field">
-              <a class="flex" target="_blank" href="">
-                <svg width="28" height="28"><use href="#"/></svg>
-                <span class="flex"></span>
-              </a>
-            </li>
-            <li class="field">
-              <a class="flex" target="_blank" href="">
-                <svg width="28" height="28"><use href="#"/></svg>
-                <span class="flex"></span>
-              </a>
-            </li>
-            <li class="field">
-              <a class="flex" target="_blank" href="">
-                <svg width="28" height="28"><use href="#"/></svg>
-                <span class="flex"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
