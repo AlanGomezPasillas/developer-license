@@ -9,6 +9,9 @@
    id="svg1"
    inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
    sodipodi:docname="dl-icon.svg"
+   inkscape:export-filename="favicon-16x16.png"
+   inkscape:export-xdpi="39.84314"
+   inkscape:export-ydpi="39.84314"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,7 +35,16 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="12.7"
+       height="12.7"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
   <defs
      id="defs1">
     <linearGradient
@@ -79,7 +91,7 @@
        cy="6.3499999"
        fx="6.3499999"
        fy="6.3499999"
-       r="5.1"
+       r="5.0999999"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
@@ -95,9 +107,9 @@
        inkscape:collect="always"
        xlink:href="#linearGradient140"
        id="linearGradient141"
-       x1="4.7999999"
+       x1="4.7999997"
        y1="3.96875"
-       x2="7.8999999"
+       x2="7.9000001"
        y2="3.96875"
        gradientUnits="userSpaceOnUse" />
   </defs>
