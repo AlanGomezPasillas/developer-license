@@ -33,7 +33,6 @@
 
       a {
         text-decoration: none;
-        min-width: 128px;
       }
       
       ul {
@@ -42,10 +41,11 @@
       }
       
       main {
-        padding: 10px;
-        min-width: 320px;
+        padding: 12px;
+        min-width: 360px;
+        justify-content: center;
         background-color: white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 80px -20px, rgba(0, 0, 0, 0.3) 0px 15px 30px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset
+        box-shadow: rgba(56, 56, 96, 0.28) 0px 28px 80px -20px, rgba(0, 0, 0, 0.4) 0px 16px 30px -30px, rgba(10, 36, 64, 0.36) 0px -2px 6px 0px inset
       }
 
       body {
@@ -54,14 +54,20 @@
         align-items: center;
         height: 95vh;
       }
-
-      h1, h2 {
+      
+      h1 {
         text-align: center;
-        margin: 5px;
+        height: 36px;
+        margin: 4px;
+      }
+
+      h2 {
+        text-align: center;
+        height: 24px;
+        margin: 4px;
       }
       
       data, a{
-        justify-content: center;
         background-color: black;
         text-align: center;
         color: white;
@@ -69,14 +75,21 @@
       }
 
       span, data, a {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
         white-space: nowrap;
-        padding: 2px;
+        padding: 0px 4px;
       }
+      
+      nav > div {
+        width: 100%;
+      }      
 
       .flex {
-        gap: 10px;
+        gap: 8px;
         display: flex;
       }
   
@@ -94,8 +107,10 @@
 
       .field {
         width: 100%;
+        height: 32px;
+        min-height: 32px;
         display: flex;
-        border: solid 1px var(--border-color);
+        border: solid 2px var(--border-color);
       }
 
       .field > span {
@@ -108,14 +123,19 @@
         flex-shrink: 0;
       }
 
-      #personal-info {
-        width: min-content;
-      }
-
       #profile-picture {
-        margin: 1px;
+        border: solid 2px var(--border-color);
       }
 
+      #personal-info {
+        width: 272px;
+        height: 434px;
+      }
+
+      #online-presence {
+        width: 272px;
+      }
+      
       @media (prefers-color-scheme: dark) {
         body {
           background-color: black;
@@ -125,14 +145,13 @@
         }
       }
       
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 680px) {
         .rowcol {
           flex-direction: column;
-          justify-content: center;
         }
 
         body {
-          padding: 5vw;
+          padding: 4vw;
           height: 100%;
         }
 
@@ -142,6 +161,10 @@
 
         main > div {
           margin: auto;
+        }
+        
+        h1, h2 {
+          height: auto;
         }
       }
     </style>
@@ -166,9 +189,7 @@
       <div class="flex rowcol">
         <section id="personal-info" class="flex col">
           <h2>Personal Info</h2>
-          <data>
-            <img id="profile-picture" fetchpriority="high" width="256" height="256" src="img/profile-picture.webp" alt="Alan's profile picture">
-          </data>
+          <img id="profile-picture" fetchpriority="high" width="272" height="272" src="img/profile-picture.webp" alt="Alan's profile picture">
           <div class="field">
             <span>Name:</span>
             <data id="name">Alan Gómez Pasillas</data>
