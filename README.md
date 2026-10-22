@@ -18,12 +18,18 @@ and experience.
 
 Right now it's pure HTML and CSS, so you have to edit everything
 manually, but the plan is to make a **C++ generator** where you just
-enter your information and it generates your credential just like
-that, easy and fast! 
+enter your information and it generates the credential for you, 
+easy and fast, you can host it everywhere as it doesn't have any
+backend code, my recommendation is GitHub Pages or Cloudflare version
+as they have free tiers and let you connect your domains if you have.
 
 In addition, I'm planning to add more sections:
 - **Experience:** Share school or working backgrounds.
 - **Technical Stack:** Programming languages, tools, operating systems,
   and certifications (maybe linking languages and tools with them?).
 
-I hope you like it. I'm going to use it.
+I also want to mention I used [realfavicongenerator.net](https://realfavicongenerator.net/)
+as it provides the best way to generate your favicons for free I've ever
+seen, so check it out for generating your own icons.
+
+I hope you like this project. I'm going to use it.
