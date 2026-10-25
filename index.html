@@ -20,8 +20,40 @@
     <link rel="canonical" href="https://developer-license.alangomezpasillas.workers.dev/">
 
     <meta property="og:title" content="Alan Gómez Pasillas - Developer License">
-    <meta property="og:description" content="Interactive developer credential: skills, experience, and links.">
+    <meta property="og:description" content="Interactive Developer Credential: skills, experience, and links.">
     <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://developer-license.alangomezpasillas.workers.dev/img/profile.webp">
+    <meta property="og:url" content="https://developer-license.alangomezpasillas.workers.dev">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alan Gómez Pasillas",
+        "jobTitle": "Software Development Engineer",
+        "description": "Software Development Engineer specializing in low-level programming, full-stack engineering, and games.",
+        "url": "https://developer-license.alangomezpasillas.workers.dev/#person",
+        "image": "https://developer-license.alangomezpasillas.workers.dev/img/profile.webp",
+        "email": "alangomezpasillas@gmail.com",
+        "nationality": "Mexican",
+        "knowsLanguage": ["English", "Spanish"],
+        "sameAs": [
+          "https://www.linkedin.com/in/alan-gomez-pasillas",
+          "https://www.github.com/alangomezpasillas",
+          "https://www.github.com/mysticprisma",
+          "https://leetcode.com/u/alangomezpasillas",
+          "https://codeforces.com/profile/alangomezpasillas",
+          "https://www.hackerrank.com/profile/alanskatemuyel",
+          "https://app.hackthebox.com/public/users/1808630",
+          "https://www.youtube.com/@AmigoProgramadorOficial",
+          "https://www.facebook.com/MysticPrismaGames",
+          "https://play.google.com/store/apps/developer?id=Mystic+Prisma+Games",
+          "https://www.indiexpo.net/en/users/MysticPrisma",
+          "https://www.codingame.com/profile/454c68738d413611ffbb785aeee055786244457",
+          "https://www.keymash.io/profile/Alan-1023"
+        ]
+      }
+    </script>
 
     <style>
       :root {
@@ -83,7 +115,7 @@
         align-items: center;
         justify-content: center;
         white-space: nowrap;
-        padding: 0px 4px;
+        padding: 0px 2px;
       }
       
       nav > div {
@@ -122,6 +154,7 @@
 
       .field > span {
         font-weight: bold;
+        width: min-content;
       }
 
       .field svg {
@@ -152,22 +185,32 @@
         .rowcol {
           flex-direction: column;
         }
-
         body {
           padding: 2vw;
           height: 100%;
         }
-
         main {
           padding-bottom: 32px;
         }
-
         main > div {
           margin: auto;
         }
-        
         h1, h2 {
           height: auto;
+        }
+      }
+
+      @media print {
+        * {
+          color: black !important;
+          background-color: white !important;
+        }
+        .field > span {
+          border-right: 2px solid black;
+        }
+        main {
+          box-shadow: none;
+          border: 2px solid black;
         }
       }
     </style>
@@ -232,37 +275,37 @@
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.linkedin.com/in/alan-gomez-pasillas" aria-label="Linkedin profile">
-                      <svg><use href="#linkedin"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#linkedin"/></svg>
                       <span class="flex">LinkedIn</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.youtube.com/@AmigoProgramadorOficial" aria-label="Youtube channel">
-                      <svg color="red"><use href="#youtube"/></svg>
+                      <svg aria-hidden="true" focusable="false" color="red"><use href="#youtube"/></svg>
                       <span class="flex">YouTube</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.facebook.com/MysticPrismaGames" aria-label="Facebook page">
-                      <svg><use href="#facebook"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#facebook"/></svg>
                       <span class="flex">Facebook</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://play.google.com/store/apps/developer?id=Mystic+Prisma+Games" aria-label="Apps in Google Play">
-                      <svg><use href="#google-play"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#google-play"/></svg>
                       <span class="flex">GooglePlay</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.hackerrank.com/profile/alanskatemuyel" aria-label="Hacker rank profile">
-                      <svg><use href="#hackerrank"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#hackerrank"/></svg>
                       <span class="flex">HackerRank</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://codeforces.com/profile/alangomezpasillas" aria-label="Code forces profile">
-                      <svg><use href="#codeforces"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#codeforces"/></svg>
                       <span class="flex">Codeforces</span>
                     </a>
                   </li>
@@ -272,43 +315,43 @@
                 <ul class="flex col">
                   <li class="field">
                     <a target="_blank" href="https://www.codingame.com/profile/454c68738d413611ffbb785aeee055786244457" aria-label="Codingame profile">
-                      <svg><use href="#codingame"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#codingame"/></svg>
                       <span class="flex">CodinGame</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://leetcode.com/u/alangomezpasillas" aria-label="Leetcode profile">
-                      <svg><use href="#leetcode"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#leetcode"/></svg>
                       <span class="flex">LeetCode</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.indiexpo.net/en/users/MysticPrisma" aria-label="Games on indie expo">
-                      <svg><use href="#indiexpo"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#indiexpo"/></svg>
                       <span class="flex">IndiExpo</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.keymash.io/profile/Alan-1023" aria-label="Keymash profile">
-                      <svg><use href="#keymash"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#keymash"/></svg>
                       <span class="flex">Keymash</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.github.com/alangomezpasillas" aria-label="Github profile 1">
-                      <svg><use href="#github"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#github"/></svg>
                       <span class="flex">GitHub1</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://www.github.com/mysticprisma" aria-label="Github profile 2">
-                      <svg color="#0FBF3E"><use href="#github"/></svg>
+                      <svg aria-hidden="true" focusable="false" color="#0FBF3E"><use href="#github"/></svg>
                       <span class="flex">GitHub2</span>
                     </a>
                   </li>
                   <li class="field">
                     <a target="_blank" href="https://app.hackthebox.com/public/users/1808630" aria-label="Hack the box profile">
-                      <svg><use href="#hackthebox"/></svg>
+                      <svg aria-hidden="true" focusable="false"><use href="#hackthebox"/></svg>
                       <span class="flex">HackTheBox</span>
                     </a>
                   </li>
