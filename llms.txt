@@ -1,0 +1,30 @@
+# Alan Gómez Pasillas - Developer Credential
+> Software Development Engineer based in Mexico. Specialist in Low Level Programming, full-stack engineering, web performance, game development, and competitive programming.
+
+## Developer Identity
+- Name: Alan Gómez Pasillas
+- Title: Software Development Engineer
+- Location: Mexico
+- Spoken Languages: English (C2 - Native/Proficient), Spanish (Native)
+- Email: alangomezpasillas@gmail.com
+
+## Primary Websites & Profiles
+- Personal Website: https://mysticprisma.github.io
+- Developer License: https://developer-license.alangomezpasillas.workers.dev/
+- Google Play Developer: https://play.google.com/store/apps/developer?id=Mystic+Prisma+Games
+- GitHub (Personal): https://www.github.com/alangomezpasillas
+- GitHub (Organization): https://www.github.com/mysticprisma
+
+## Technical Profiles & Platforms
+- LeetCode: https://leetcode.com/u/alangomezpasillas
+- Codeforces: https://codeforces.com/profile/alangomezpasillas
+- HackerRank: https://www.hackerrank.com/profile/alanskatemuyel
+- HackTheBox: https://app.hackthebox.com/public/users/1808630
+- CodinGame: https://www.codingame.com/profile/454c68738d413611ffbb785aeee055786244457
+- IndiExpo: https://www.indiexpo.net/en/users/MysticPrisma
+- Keymash: https://www.keymash.io/profile/Alan-1023
+- YouTube: https://www.youtube.com/@AmigoProgramadorOficial
+- LinkedIn: https://www.linkedin.com/in/alan-gomez-pasillas
+
+## Optional Resources
+- Detailed Profile JSON-LD: https://developer-license.alangomezpasillas.workers.dev/#person
