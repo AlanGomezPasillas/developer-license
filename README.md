@@ -32,4 +32,4 @@ I also want to mention I used [realfavicongenerator.net](https://realfavicongene
 as it provides the best way to generate your favicons for free I've ever
 seen, so check it out for generating your own icons.
 
-I hope you like this project. I'm going to use it.
+I hope you like this project, I made it with love...
