@@ -9,6 +9,7 @@
     <meta name="author" content="Alan Gómez Pasillas">
     <meta name="apple-mobile-web-app-title" content="Dev License">
 
+    <link rel="preload" href="/img/profile.webp" as="image" fetchpriority="high">
     <link rel="shortcut icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -101,6 +102,11 @@
       .row {
         flex-direction: row;
       }
+      
+      .frame {
+        display: flex;
+        border: solid 2px var(--border-color);
+      }
 
       .rowcol {
         flex-direction: row;
@@ -124,10 +130,6 @@
         flex-shrink: 0;
       }
 
-      #profile-picture {
-        border: solid 2px var(--border-color);
-      }
-
       #personal-info {
         width: 272px;
         height: 434px;
@@ -142,7 +144,7 @@
           background-color: black;
         }
         main {
-          background-color: #121212;
+          background-color: #202020;
         }
       }
       
@@ -190,7 +192,9 @@
       <div class="flex rowcol">
         <section id="personal-info" class="flex col">
           <h2>Personal Info</h2>
-          <img id="profile-picture" fetchpriority="high" width="272" height="272" src="img/profile-picture.webp" alt="Alan's profile picture">
+          <div class="frame">
+            <img id="profile-picture" fetchpriority="high" width="268" height="268" src="img/profile.webp" alt="Alan's profile picture">
+          </div>
           <div class="field">
             <span>Name:</span>
             <data id="name">Alan Gómez Pasillas</data>
