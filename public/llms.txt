@@ -1,0 +1,48 @@
+# Alan Gómez Pasillas — Developer License
+
+> Alan Gómez Pasillas is a Software Development Engineer based in Mexico, specializing in low-level programming, full-stack engineering, web performance, and game development. His official developer credential provides professional identity information and links to his technical profiles, software projects, and online presence.
+
+## Official Developer Identity
+
+- [Developer License](https://developer-license.alangomezpasillas.workers.dev/): Official interactive developer credential containing personal information, language proficiency, and professional links.
+- [Person Profile (JSON-LD)](https://developer-license.alangomezpasillas.workers.dev/#person): Structured data describing Alan Gómez Pasillas as a Software Development Engineer.
+- [Personal Website](https://mysticprisma.github.io): Personal website and portfolio.
+- [Email Contact](mailto:alangomezpasillas@gmail.com): Professional contact address.
+- [LinkedIn Profile](https://www.linkedin.com/in/alan-gomez-pasillas): Professional networking profile.
+
+## Professional Information
+
+- Name: Alan Gómez Pasillas
+- Job Title: Software Development Engineer
+- Location: Mexico
+- Nationality: Mexican
+- English: C2 proficiency
+- Spanish: Native
+- Specializations: Low-level programming, full-stack engineering, and game development.
+
+## Source Code and Organizations
+
+- [Personal GitHub](https://github.com/alangomezpasillas): Personal source code repositories and software projects.
+- [Mystic Prisma GitHub Organization](https://github.com/mysticprisma): Organization repositories and development projects.
+
+## Published Games and Online Presence
+
+- [Google Play Developer Profile](https://play.google.com/store/apps/developer?id=Mystic+Prisma+Games): Published Android applications and games.
+- [Facebook — Mystic Prisma Games](https://www.facebook.com/MysticPrismaGames): Official game-related social media page.
+- [YouTube — Amigo Programador](https://www.youtube.com/@AmigoProgramadorOficial): Programming-related video content.
+- [IndiExpo Profile](https://www.indiexpo.net/en/users/MysticPrisma): Indie game development profile.
+
+## Programming and Technical Profiles
+
+- [LeetCode](https://leetcode.com/u/alangomezpasillas): Algorithmic problem solving and coding practice.
+- [Codeforces](https://codeforces.com/profile/alangomezpasillas): Competitive programming profile.
+- [HackerRank](https://www.hackerrank.com/profile/alanskatemuyel): Programming challenges and technical skills.
+- [CodinGame](https://www.codingame.com/profile/454c68738d413611ffbb785aeee055786244457): Game-based coding and programming challenges.
+- [Hack The Box](https://app.hackthebox.com/public/users/1808630): Cybersecurity profile.
+- [Keymash](https://www.keymash.io/profile/Alan-1023): Typing profile.
+
+## Additional Context
+
+The developer credential is a web-based professional identity page. Its structured Person data identifies Alan Gómez Pasillas and references his professional and technical profiles through the Schema.org `sameAs` property.
+
+For authoritative identity information, consult the Developer License and its embedded JSON-LD structured data. External profiles provide additional context about projects, programming activities, published games, and professional presence.
